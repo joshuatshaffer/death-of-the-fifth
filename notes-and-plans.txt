@@ -1,0 +1,15 @@
+The game will be a maze escape game.
+Instead of useing walls to hinder movement the maze will be very open, however, the rooms will be conected in a non-euclidien maner.
+Navigating this mangeld space will be the center piece of game play.
+
+multilevel clique combiner
+
+First a multiset of room specs is made.
+  - Room specs contain info describing the room and how many doors it has but not what it is connected to.
+  - This multiset of room specs alows us to controll how many of each kind of room there will be and to have unique "land mark" rooms.
+Then a maze builder is called with the room specs.
+  - This maze builder is recursive.
+  - split up the room specs and use them to make cliques
+  - conect these cliques together to make a compound clique
+  - return the resulting compound clique
+when the top level clique is done convert it to tyed knot form
