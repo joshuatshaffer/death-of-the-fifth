@@ -13,3 +13,8 @@ Then a maze builder is called with the room specs.
   - conect these cliques together to make a compound clique
   - return the resulting compound clique
 when the top level clique is done convert it to tyed knot form
+
+The layout and static data of the maze is stored in tyed knot form.
+The mutible data of the maze could be stored in a map.
+The keys to this map are stored in the tyed knot structure.
+ST monad?
